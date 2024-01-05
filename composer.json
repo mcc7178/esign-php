@@ -1,0 +1,42 @@
+{
+    "name": "mcc7178/esign-php",
+    "description": "e签宝PHP扩展包",
+    "keywords": [
+        "mcc7178",
+        "esign",
+        "e签宝"
+    ],
+    "homepage": "https://github.com/mcc7178/esign-php",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "mcc7178",
+            "email": "avk8301@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AAbutton\\Esign\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AAbutton\\Esign\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
